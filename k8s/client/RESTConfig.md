@@ -1,4 +1,4 @@
-#rest.Config 详解
+# rest.Config 详解
 > rest.Config 是我们获取k8s集群client的最基础的配置文件，它是创建client的基础。
  
 通常情况下，我们创建一个 k8s Client,无论是最基础的 RESTClient ，还是基于 RESTClient 去封装 ClientSet / DynamicClient / DiscoverClient 都需要 rest.Config 这个配置文件去建立。
