@@ -961,6 +961,8 @@ order-sample   待配送      Order wait delivery
 
 # 附录
 
+[github 项目地址](https://github.com/MrSumeng/crd-demo)
+
 [kububuilder book](https://book.kubebuilder.io/introduction.html)
 
 [cretmanager](https://cert-manager.io/docs/installation/)
