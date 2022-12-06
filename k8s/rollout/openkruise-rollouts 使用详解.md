@@ -148,3 +148,16 @@ spec:
 ## 使用示例
 
 [官方示例](https://github.com/openkruise/rollouts/blob/master/docs/tutorials/basic_usage.md)
+
+## Q&A
+Q:第一次部署工作负载会触发 rollout 吗？
+A:不会，第一次部署工作负载 rollout 不会被触发，工作负载仍然按照 k8s 原有的逻辑进行运作。
+
+Q:rollout 会在什么时候触发？
+A:会在工作负载发生变更时触发。
+
+Q:只要变更工作负载就会触发吗？
+A:不是，需要变更工作负载里 spec 下除 replicas 和 paused 字段外的其他字段。status的变更和刚刚说到的字段变更不会触发rollout。
+
+Q：可以在 rollout 正在进行变更的时候发版或者回滚吗？
+A：可以，rollout 支持连续发版。
