@@ -878,8 +878,8 @@ make deploy-yaml REPO=<xxx> TAG=<xxx>
 # 拉取依赖
 go mod tidy
 go mod vendor
-# 生成deepco 文件
-
+# 生成 deepcopy 文件
+make generate
 # 制作镜像
 make docker-build REPO=<xxx> TAG=<xxx>
 # 上传镜像
