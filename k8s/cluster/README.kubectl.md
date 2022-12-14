@@ -7,7 +7,7 @@
 > 操作系统：centos7.5
 > 命令行： bash
 
-##安装 Kubectl
+## 安装 Kubectl
 ```bash
 #下载安装包 如果需要指定版本 使用版本号替换 $(curl -L -s https://dl.k8s.io/release/stable.txt) 即可
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
