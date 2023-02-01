@@ -949,7 +949,7 @@ func NewPodManager(config *v1alpha1.EdgeController, si cache.SharedIndexInformer
 
 ### 消息合并
 
-消息合并主要合并的是修改信息，如下 pod.spec 和 metadata 没有改变，那么这个事件就会被忽略：
+消息合并主要合并的是修改信息，如果 pod.spec 和 metadata 没有改变，那么这个事件就会被忽略：
 
 1. 接收事件信息
 2. 新增：
